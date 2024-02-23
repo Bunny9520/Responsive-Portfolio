@@ -1,0 +1,287 @@
+html,body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(120deg, dodgerblue, blueviolet);
+background-repeat: no-repeat;
+color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(0, 0%, 0%, 0.285);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#name {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#provider {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#provider a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.mainInfo {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainInfo img {
+    width: 300px;
+}
+.about {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.about h2 {
+    font-size: 50px;
+}
+
+.about span {
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+#link1, #link2, #link3, #link4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all ease 0.5s;
+}
+#link2 a, #link3 a, #link4 a {
+    color: white;
+}
+
+#link1{
+    background-color: aqua;
+} 
+#link2 {
+    background-color: brown;
+}
+#link3 {
+    background-color: rgb(171, 104, 3);
+}
+#link4 {
+    background-color: rgba(218, 8, 241, 0.909);
+}
+
+#footer button {
+    padding: 13px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    background-color:rgba(30, 143, 255, 0.5);
+    color: white;
+}
+ @media screen and(max-width: 1200px) {
+    #name {
+        width: 30%;
+    }
+    #provider {
+        width: 30%;
+    }
+    .mainInfo {
+        width: 90%;
+    }
+ }
+
+ @media screen and(max-width: 1050px) {
+    html, body {
+        height:830px ;
+    }
+
+    .container {
+        height: 800px;
+    }
+
+    .mainInfo {
+        flex-direction: column;
+    }
+
+    .maininfo img {
+        width: 200px;
+    }
+
+    .about {
+        height: 300px;
+    }
+
+    .links {
+        margin-top: 50px;
+    }
+
+    .about h2 {
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .about h3 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .provider {
+        width: 40%;
+    }
+    .links {
+        margin-top: 20px;
+    }
+ }
+
+ @media screen and(max-width: 850px) {
+    html, body  {
+        height: 910px;
+    }
+
+    .container {
+        height: 880px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    #name {
+        width: 40%;
+    }
+
+    #provider {
+        width: 50%;
+    }
+
+    #footerBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footerBtn button {
+        padding: 13px;
+        border: none;
+        border-radius: 0;
+        background-color: rgba(30, 143, 255, 0.5);
+        color: white;
+    }
+ }
+
+ @media screen and(max-width: 650px) {
+    html, body {
+        height: 830px;
+    }
+    .container {
+        height: 800px;
+    }
+
+    #name { 
+        width: 50%;
+    }
+
+    #provider {
+        width: 50px;
+    }
+
+    .mainInfo {
+        margin-top: -50px;
+    }
+
+    .mainInfo img {
+        width: 150px;
+    }
+
+    .links {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    #link1, #link2, #link3, #link4 {
+        width: 80px;
+        height: 80px;
+    }
+ }
+
+ @media screen and(max-width: 530px) {
+    html, body {
+        height: 1430px;
+    }
+
+    .container {
+        height: 1400px;
+    }
+
+    #name {
+        width: 70%;
+    }
+
+    #provider {
+        width: 95%;
+    }
+
+    .mainInfo {
+        margin-top: -700px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #link1, #link2, #link3, #link4 {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #link1:hover, #link2:hover, #link3:hover, #link4:hover {
+        width: 170px;
+        height: 170px;
+    }
+ }
+
